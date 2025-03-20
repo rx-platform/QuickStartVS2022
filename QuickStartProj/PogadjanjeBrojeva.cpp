@@ -22,8 +22,7 @@ rx_result PogadjanjeBrojeva::initialize_source(rx_platform_api::rx_init_context&
 {
 	RX_PLUGIN_LOG_DEBUG("PogadjanjeBrojeva", 100, _rx_func_);
 	rx_result result = timeout_.bind(".Timeout", ctx, [this](const uint32_t val)
-		{
-			
+		{			
 			RX_PLUGIN_LOG_DEBUG("PogadjanjeBrojeva", 100, rx_create_string("Promena Timeout-a:", val).c_str());
 		});
 	if (!result)
@@ -31,11 +30,6 @@ rx_result PogadjanjeBrojeva::initialize_source(rx_platform_api::rx_init_context&
 	some_other_.bind("Memory.Status.Used", ctx, [this](const uint32_t val, bool valid)
 		{
 			RX_PLUGIN_LOG_DEBUG("PogadjanjeBrojeva", 100, rx_create_string("Promena SomeOther:", val).c_str());
-		});
-	result = timeout_.bind(".Timeout", ctx, [this](const uint32_t val)
-		{
-
-			RX_PLUGIN_LOG_DEBUG("PogadjanjeBrojeva", 100, rx_create_string("Promena Timeout-a:", val).c_str());
 		});
 	if (!result)
 		return result;
