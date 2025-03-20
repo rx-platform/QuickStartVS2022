@@ -1,0 +1,27 @@
+{
+    "sversion": "1.7",
+    "object": {
+        "meta": {
+            "type": "application",
+            "nodeId": "999:g:5989000e-81c9-4079-bace-580cc616a0d3",
+            "name": "App",
+            "attrs": 31,
+            "super": {
+                "path": "/sys/types/base/UserApplication"
+            },
+            "created": "2023-03-14T08:02:19.074Z",
+            "modified": "2023-03-14T08:02:32.112Z",
+            "ver": "1.0",
+            "path": "/world"
+        },
+        "def": {
+            "instance": {
+                "processor": -1,
+                "priority": 1,
+                "identity": "AA=="
+            },
+            "overrides": {},
+            "programs": []
+        }
+    }
+}

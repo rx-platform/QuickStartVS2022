@@ -1,0 +1,29 @@
+{
+    "sversion": "1.7",
+    "object": {
+        "meta": {
+            "type": "domain",
+            "nodeId": "999:g:a5508e2b-d02a-48df-8fd6-ce1f9c8bfd80",
+            "name": "Dom",
+            "attrs": 31,
+            "super": {
+                "path": "/sys/types/base/UserDomain"
+            },
+            "created": "2023-03-14T08:02:35.653Z",
+            "modified": "2023-03-14T08:02:51.867Z",
+            "ver": "1.0",
+            "path": "/world"
+        },
+        "def": {
+            "instance": {
+                "processor": -1,
+                "priority": 1,
+                "app": {
+                    "path": "App"
+                }
+            },
+            "overrides": {},
+            "programs": []
+        }
+    }
+}

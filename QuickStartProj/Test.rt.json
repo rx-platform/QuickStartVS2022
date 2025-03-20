@@ -1,0 +1,28 @@
+{
+    "sversion": "2.5",
+    "object": {
+        "meta": {
+            "type": "object",
+            "nodeId": "999:g:25a3a53c-dfc0-4d03-ad39-83f0e0d4c278",
+            "name": "Test",
+            "attrs": 31,
+            "super": {
+                "path": "TestObj"
+            },
+            "created": "2023-03-14T08:08:03.777Z",
+            "modified": "2023-03-14T08:09:10.444Z",
+            "ver": "1.1",
+            "path": "/world",
+            "runat": ""
+        },
+        "def": {
+            "instance": {
+                "domain": {
+                    "path": "Dom"
+                }
+            },
+            "overrides": {},
+            "programs": []
+        }
+    }
+}

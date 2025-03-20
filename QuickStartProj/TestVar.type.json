@@ -1,0 +1,40 @@
+{
+    "sversion": "1.7",
+    "type": {
+        "meta": {
+            "type": "variable_type",
+            "nodeId": "999:g:2a4d818c-bc69-43ce-83c1-1d1c0cabc046",
+            "name": "TestVar",
+            "attrs": 15,
+            "super": {
+                "path": "/sys/types/base/VariableBase"
+            },
+            "created": "2023-03-14T08:01:34.436Z",
+            "modified": "2023-03-14T08:01:49.815Z",
+            "ver": "1.1",
+            "path": "/world"
+        },
+        "def": {
+            "sealed": false,
+            "abstract": false,
+            "items": [],
+            "overrides": {},
+            "description": "",
+            "filters": [],
+            "sources": [
+                {
+                    "name": "broj",
+                    "target": {
+                        "path": "/sys/plugins/QuickStart/PodFolder/PogadjanjeBrojeva"
+                    },
+                    "input": true,
+                    "output": true,
+                    "description": "",
+                    "sim": true,
+                    "proc": true
+                }
+            ],
+            "mappers": []
+        }
+    }
+}
