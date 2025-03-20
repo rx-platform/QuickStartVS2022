@@ -20,11 +20,22 @@ PogadjanjeBrojeva::~PogadjanjeBrojeva()
 // init static stuff here
 rx_result PogadjanjeBrojeva::initialize_source(rx_platform_api::rx_init_context& ctx)
 {
-	RX_PLUGIN_LOG_DEBUG("Brojevi", 100, _rx_func_);
+	RX_PLUGIN_LOG_DEBUG("PogadjanjeBrojeva", 100, _rx_func_);
 	rx_result result = timeout_.bind(".Timeout", ctx, [this](const uint32_t val)
 		{
-			/*if (timer_)
-				start_timer(timer_, val);*/
+			
+			RX_PLUGIN_LOG_DEBUG("PogadjanjeBrojeva", 100, rx_create_string("Promena Timeout-a:", val).c_str());
+		});
+	if (!result)
+		return result;
+	some_other_.bind("Memory.Status.Used", ctx, [this](const uint32_t val, bool valid)
+		{
+			RX_PLUGIN_LOG_DEBUG("PogadjanjeBrojeva", 100, rx_create_string("Promena SomeOther:", val).c_str());
+		});
+	result = timeout_.bind(".Timeout", ctx, [this](const uint32_t val)
+		{
+
+			RX_PLUGIN_LOG_DEBUG("PogadjanjeBrojeva", 100, rx_create_string("Promena Timeout-a:", val).c_str());
 		});
 	if (!result)
 		return result;
@@ -40,7 +51,7 @@ rx_result PogadjanjeBrojeva::initialize_source(rx_platform_api::rx_init_context&
 // start dynamic things here
 rx_result PogadjanjeBrojeva::start_source(rx_platform_api::rx_start_context& ctx)
 {
-	RX_PLUGIN_LOG_DEBUG("first_source", 100, _rx_func_);
+	RX_PLUGIN_LOG_DEBUG("PogadjanjeBrojeva", 100, _rx_func_);
 
 	values::rx_value val;
 	val.assign_static<string_type>("Upisi 0", rx_time::now());

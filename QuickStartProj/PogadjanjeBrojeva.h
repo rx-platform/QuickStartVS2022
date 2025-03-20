@@ -19,6 +19,7 @@ public:
     static rx_node_id source_type_id;
 
 private:
+    rx_platform_api::connected_value<uint32_t> some_other_;
     rx_platform_api::local_value<uint32_t> timeout_;
     rx_platform_api::owned_value<uint32_t> imagined_;
 

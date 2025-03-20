@@ -6,6 +6,8 @@
 #include "PogadjanjeBrojeva.h"
 
 
+#include "lib/rx_heap.cpp"
+
 RX_DECLARE_PLUGIN(plugin_main);
 
 
