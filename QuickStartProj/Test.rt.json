@@ -11,7 +11,7 @@
             },
             "created": "2023-03-14T08:08:03.777Z",
             "modified": "2023-03-14T08:09:10.444Z",
-            "ver": "1.1",
+            "ver": "1.5",
             "path": "/world",
             "runat": ""
         },
@@ -21,7 +21,9 @@
                     "path": "Dom"
                 }
             },
-            "overrides": {},
+            "overrides": {
+                "OPCPort": "/sys/runtime/ports/OpcServer"
+            },
             "programs": []
         }
     }

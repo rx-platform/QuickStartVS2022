@@ -1,5 +1,5 @@
 {
-    "sversion": "1.7",
+    "sversion": "2.5",
     "type": {
         "meta": {
             "type": "variable_type",
@@ -11,8 +11,9 @@
             },
             "created": "2023-03-14T08:01:34.436Z",
             "modified": "2023-03-14T08:01:49.815Z",
-            "ver": "1.1",
-            "path": "/world"
+            "ver": "1.2",
+            "path": "/world",
+            "runat": ""
         },
         "def": {
             "sealed": false,
@@ -34,7 +35,19 @@
                     "proc": true
                 }
             ],
-            "mappers": []
+            "mappers": [
+                {
+                    "name": "opc",
+                    "target": {
+                        "path": "/sys/types/opc/OpcSimpleMapper"
+                    },
+                    "read": true,
+                    "write": true,
+                    "description": "",
+                    "sim": true,
+                    "proc": true
+                }
+            ]
         }
     }
 }

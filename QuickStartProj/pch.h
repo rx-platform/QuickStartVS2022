@@ -9,7 +9,7 @@
 
 ///!! source code path
 ///!! not necessary but code macros will work
-#define SOURCE_CODE_PATH "D:\\RX\\Plugins\\LearnProject\\QuickStartProj\\QuickStartProj"
+#define SOURCE_CODE_PATH "C:\\RX\\Plugins\\LearnProject\\QuickStartProj\\QuickStartProj"
 
 
 #define RXPLUGIN_EXPORTS
